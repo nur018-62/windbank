@@ -10,7 +10,57 @@
     <link rel="stylesheet" href="bank.css">
 </head>
 <body>
-    welcome to wind bank
+    <div id="login-area">
+        <h1 class="text-center">welcome to wind bank</h1>
+        <div id="submit-area">
+            <h4>login</h4>
+            <input type="text"class="form-control"placeholder="Enter your mail">
+            <br/>
+            <input type="password"class="form-control"placeholder="Enter your password">
+            <br>
+            <button id="login" class="btn btn-success">Enter</button>
+        </div>
+    </div>
+    <div id="trans-area">
+        <h1>transction Area</h1>
+          <div class="row">
+             <div class="col-md-4 ">
+              <div class="deposit status">
+                <h5>Deposit</h5>
+                <h2>$ <span id="currentDeposit">00</span> </h2>
+              </div>
+        </div>
+        <div class=" col-md-4 ">
+            <div class=" withdrow status">
+            <h5>withdrow</h5>
+            <h2>$ <span id="withdrawfull">00</span> </h2>
+            </div>
+        </div>
+        <div class="col-md-4 ">
+           <div class="status balance">
+            <h5>Blance</h5>
+            <h2>$ <span id="balanceAmount">1240</span></h2>
+           </div>
+        </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6">
+               <div id="submit-area">
+                  <h4>Deposit</h4>
+                  <input id ="deposite-amount"type="text" class="form-control" placeholder="$ amount you want to deposit"><br/>
+                <button id="addDeposit" class="btn btn-success">Deposite</button>
+               </div>
+            </div>
+            <div class="col-md-6">
+                <div id="submit-area">
+                    <h4>Withdrow</h4>
+                    <input id="withdrowAmount" type="text" class="form-control" placeholder="$ amount you want to withdrow"><br/>
+                    <button id="addwithdrow" class="btn btn-success">withdrow</button>
+                </div>
+               </div>
+        </div>
+    </div>
     
     <script src="bank.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
